@@ -40,7 +40,7 @@ extern "C" {
 
 MPR121_t::MPR121_t(){
 	Wire.begin();	
-	address = 0x5C;    // default address is 0x5C, for use with Bare Touch Board
+	address = 0x5A;    // default address is 0x5A for use with Breakout Board
 	ECR_backup = 0x00;
 	running = false;
 	error = 1<<NOT_INITED_BIT; // initially, we're not initialised

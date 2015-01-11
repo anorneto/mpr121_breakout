@@ -194,7 +194,7 @@ class MPR121_t
 		// -------------------- BASIC FUNCTIONS --------------------
 
 		// begin() must be called before using any other function
-		// address is optional, default is 0x5C
+		// address is optional, default is 0x5A for Breakout Board
 		bool begin(unsigned char address);
 		bool begin();
 
