@@ -615,12 +615,12 @@ void MPR121_t::analogWrite(unsigned char electrode, unsigned char value){
 	  setRegister(PWM2, (shiftedVal & 0x0F) | (scratch & 0xF0));
 	  break;
 	case 5:
-	  scratch = getRegister(PWM2);
-	  setRegister(PWM2, ((shiftedVal & 0x0F)<<4) | (scratch & 0x0F));
+	 // scratch = getRegister(PWM2);
+	  //setRegister(PWM2, ((shiftedVal & 0x0F)<<4) | (scratch & 0x0F));
 	  break;
 	case 6:
-	  scratch = getRegister(PWM3);
-	  setRegister(PWM3, (shiftedVal & 0x0F) | (scratch & 0xF0));
+	  //scratch = getRegister(PWM3);
+	  //setRegister(PWM3, (shiftedVal & 0x0F) | (scratch & 0xF0));
 	  break;
 	case 7:
 	  scratch = getRegister(PWM3);
